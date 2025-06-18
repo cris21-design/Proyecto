@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #070707;
+    color: #BF0404;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    border: 3px solid #000000;
+}
+
+.text-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #070707;
+    color: #FFFAFB;
+    text-align: justify;
+    border-right: 3px solid #BF0404;
+    position: relative;
+}
+
+.text-section h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.text-section p {
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BF0404;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-section img {
+    max-width: 90%;
+    height: auto;
+    border: 3px solid #070707;
+}
+
+.volver {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #FF0404;
+    color: #070707;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.volver:hover {
+    background-color: #870303;
+}
+
+.text-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: repeating-linear-gradient(
+        45deg,
+        #FFFAFB,
+        #FFFAFB 10px,
+        #BF0404 10px,
+        #BF0404 20px
+    );
+}
